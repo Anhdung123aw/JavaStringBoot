@@ -20,7 +20,6 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
             HttpServletResponse response,
             AuthenticationException authException
     ) throws IOException, ServletException {
-
         ErrorCode errorCode = ErrorCode.UNAUTHENTICATED;
 
         response.setStatus(errorCode.getStatusCode().value());
