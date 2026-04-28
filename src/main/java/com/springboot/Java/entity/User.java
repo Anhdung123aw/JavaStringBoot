@@ -29,7 +29,7 @@ public class User {
     @JoinTable(
             name = "user_roles", // Tên bảng trung gian bạn đã tạo
             joinColumns = @JoinColumn(name = "user_id"), // Tên cột khóa ngoại trỏ tới bảng User
-            inverseJoinColumns = @JoinColumn(name = "roles_name") // Tên cột khóa ngoại trỏ tới bảng Role (có chữ 's')
+            inverseJoinColumns = @JoinColumn(name = "roles_name") // Tên cột khóa ngoại trỏ tới bảng Role
     )
     Set<Role> roles;
 
