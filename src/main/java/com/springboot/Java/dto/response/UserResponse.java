@@ -1,6 +1,5 @@
 package com.springboot.Java.dto.response;
 
-import com.springboot.Java.entity.Role;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -13,10 +12,10 @@ import java.util.Set;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserResponse {
-    String id;
-    String username;
-    String firstName;
-    String lastName;
-    LocalDate dob;
-    Set<RoleResponse> roles;
+	String id;
+	String username;
+	String firstName;
+	String lastName;
+	LocalDate dob;
+	Set<RoleResponse> roles;
 }

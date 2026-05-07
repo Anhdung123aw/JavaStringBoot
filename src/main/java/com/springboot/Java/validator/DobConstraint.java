@@ -13,8 +13,8 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Constraint(validatedBy = {DobValidator.class})
 public @interface DobConstraint {
-    String message() default "Invalid date of birth";
-    int min();
-    Class<?>[] groups() default { };
-    Class<? extends Payload>[] payload() default { };
+	String message() default "Invalid date of birth";
+	int min();
+	Class<?>[] groups() default {};
+	Class<? extends Payload>[] payload() default {};
 }

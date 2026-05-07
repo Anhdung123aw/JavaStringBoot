@@ -1,6 +1,5 @@
 package com.springboot.Java.dto.response;
 
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -10,6 +9,6 @@ import lombok.experimental.FieldDefaults;
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class AuthenticationResponse {
-    String token;
-    boolean authenticated;
+	String token;
+	boolean authenticated;
 }

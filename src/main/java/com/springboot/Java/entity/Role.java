@@ -13,10 +13,10 @@ import java.util.Set;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 public class Role {
-    @Id
-    String name;
-    String description;
+	@Id
+	String name;
+	String description;
 
-    @ManyToMany
-    Set<Permission> permissions;
+	@ManyToMany
+	Set<Permission> permissions;
 }
